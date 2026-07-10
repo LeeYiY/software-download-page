@@ -2,10 +2,14 @@
   <div id="app-root">
     <!-- 头部 -->
     <header class="header">
-      <div class="container">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
         <router-link to="/" class="logo" style="text-decoration: none; color: #fff;">
           📦 软件下载站
           <small>安全 · 快速 · 精选</small>
+        </router-link>
+        <router-link to="/admin/add" class="admin-btn">
+          <el-icon><Plus /></el-icon>
+          添加软件
         </router-link>
       </div>
     </header>
@@ -61,7 +65,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { api } from '@/utils/api'
-import { List, Monitor, OfficeBuilding, VideoCamera, Tools, ChromeFilled } from '@element-plus/icons-vue'
+import { List, Monitor, OfficeBuilding, VideoCamera, Tools, ChromeFilled, Plus } from '@element-plus/icons-vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -122,5 +126,23 @@ onMounted(async () => {
   font-size: 13px;
   border-top: 1px solid #e4e7ed;
   background: #fff;
+}
+
+.admin-btn {
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.admin-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
 }
 </style>

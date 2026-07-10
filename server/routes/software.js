@@ -47,4 +47,36 @@ router.get('/:id', async (req, res) => {
   }
 })
 
+// POST /api/software - 添加新软件
+router.post('/', async (req, res) => {
+  try {
+    // 自动生成 id（取当前最大 id + 1）
+    const maxDoc = await Software.findOne().sort({ id: -1 }).lean()
+    const nextId = maxDoc ? maxDoc.id + 1 : 1
+
+    const data = req.body
+    data.id = nextId
+
+    const software = new Software(data)
+    await software.save()
+    res.json({ success: true, data: software })
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message })
+  }
+})
+
+// DELETE /api/software/:id - 删除软件
+router.delete('/:id', async (req, res) => {
+  try {
+    const id = parseInt(req.params.id)
+    const result = await Software.findOneAndDelete({ id })
+    if (!result) {
+      return res.status(404).json({ success: false, error: '未找到该软件' })
+    }
+    res.json({ success: true, message: '删除成功' })
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message })
+  }
+})
+
 module.exports = router

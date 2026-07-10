@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import SoftwareDetail from '@/views/SoftwareDetail.vue'
+import AddSoftware from '@/views/AddSoftware.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     name: 'SoftwareDetail',
     component: SoftwareDetail,
     props: true
+  },
+  {
+    path: '/admin/add',
+    name: 'AddSoftware',
+    component: AddSoftware
   }
 ]
 
