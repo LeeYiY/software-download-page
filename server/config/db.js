@@ -13,7 +13,8 @@ async function connectDB() {
       console.log('✅ MongoDB 连接成功:', uri.replace(/:.*@/, ':****@'))
       return
     } catch (err) {
-      console.warn('⚠️ 配置的 MongoDB 连接失败，切换到内存数据库')
+      console.warn('⚠️ 配置的 MongoDB 连接失败:', err.message)
+      console.warn('   切换到内存数据库...')
     }
   }
 
