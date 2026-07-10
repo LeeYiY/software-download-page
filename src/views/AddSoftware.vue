@@ -180,7 +180,7 @@
               <el-icon><Delete /></el-icon> 删除
             </el-button>
           </div>
-          <el-row :gutter="12">
+          <el-row :gutter="12" style="margin-bottom: 10px;">
             <el-col :span="6">
               <el-input v-model="ver.version" placeholder="版本号" size="default" />
             </el-col>
@@ -191,6 +191,37 @@
               <el-input v-model="ver.changes" placeholder="更新说明" size="default" />
             </el-col>
           </el-row>
+          <div class="sub-download-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span style="font-size: 12px; color: #909399;">下载链接</span>
+              <el-button size="small" text type="primary" @click="addVersionLink(idx)">
+                + 添加链接
+              </el-button>
+            </div>
+            <div v-for="(link, li) in ver.downloadLinks" :key="'vl-' + li" class="sub-dl-row">
+              <el-row :gutter="8" align="middle">
+                <el-col :span="5">
+                  <el-input v-model="link.name" placeholder="名称" size="small" />
+                </el-col>
+                <el-col :span="10">
+                  <el-input v-model="link.url" placeholder="下载地址" size="small" />
+                </el-col>
+                <el-col :span="3">
+                  <el-select v-model="link.type" size="small" style="width: 100%;">
+                    <el-option label="直链" value="direct" />
+                    <el-option label="网盘" value="cloud" />
+                    <el-option label="镜像" value="mirror" />
+                  </el-select>
+                </el-col>
+                <el-col :span="4">
+                  <el-input v-model="link.password" placeholder="提取码" size="small" />
+                </el-col>
+                <el-col :span="2">
+                  <el-button type="danger" circle size="small" :icon="Delete" @click="removeVersionLink(idx, li)" />
+                </el-col>
+              </el-row>
+            </div>
+          </div>
         </div>
 
         <el-button type="primary" plain size="small" @click="addVersion" style="margin-top: 8px;">
@@ -318,6 +349,14 @@ function removeVersion(idx) {
   form.versionHistory.splice(idx, 1)
 }
 
+function addVersionLink(vIdx) {
+  form.versionHistory[vIdx].downloadLinks.push({ name: '', url: '', type: 'direct', password: '', description: '' })
+}
+
+function removeVersionLink(vIdx, li) {
+  form.versionHistory[vIdx].downloadLinks.splice(li, 1)
+}
+
 async function submitForm() {
   const valid = await formRef.value.validate().catch(() => false)
   if (!valid) return
@@ -437,5 +476,20 @@ function resetForm() {
   color: #409eff;
   letter-spacing: 2px;
   user-select: none;
+}
+
+.sub-download-section {
+  padding: 10px 12px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px dashed #dcdfe6;
+}
+
+.sub-dl-row {
+  margin-bottom: 6px;
+}
+
+.sub-dl-row:last-child {
+  margin-bottom: 0;
 }
 </style>
