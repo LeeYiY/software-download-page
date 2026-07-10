@@ -2,13 +2,14 @@
   <div class="admin-page">
     <el-breadcrumb :separator-icon="ArrowRight" style="margin-bottom: 16px;">
       <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>添加软件</el-breadcrumb-item>
+      <el-breadcrumb-item :to="{ path: '/admin' }">管理后台</el-breadcrumb-item>
+      <el-breadcrumb-item>编辑软件</el-breadcrumb-item>
     </el-breadcrumb>
 
     <div class="form-card">
       <h2 style="margin-bottom: 20px; font-size: 20px; color: #303133;">
-        <el-icon><Plus /></el-icon>
-        添加新软件
+        <el-icon><EditPen /></el-icon>
+        编辑软件：{{ form.name || '加载中...' }}
       </h2>
 
       <el-form
@@ -18,6 +19,7 @@
         label-width="100px"
         label-position="top"
         size="default"
+        v-loading="!loaded"
       >
         <el-row :gutter="20">
           <el-col :span="12">
@@ -71,7 +73,6 @@
           </el-col>
         </el-row>
 
-        <!-- 预览图 -->
         <el-form-item label="预览图 URL" prop="imageUrl">
           <el-input v-model="form.imageUrl" placeholder="https://example.com/screenshot.png">
             <template #append>
@@ -80,7 +81,7 @@
           </el-input>
           <div v-if="form.imageUrl" class="image-preview">
             <img :src="form.imageUrl" alt="预览图" @error="imageError = true" v-if="!imageError">
-            <div v-else class="image-error">❌ 图片加载失败</div>
+            <div v-else class="image-error">图片加载失败</div>
           </div>
         </el-form-item>
 
@@ -133,7 +134,6 @@
           <el-switch v-model="form.featured" active-text="推荐" inactive-text="普通" />
         </el-form-item>
 
-        <!-- 下载链接 -->
         <el-divider content-position="left">
           <el-icon><Download /></el-icon>
           下载链接
@@ -167,7 +167,6 @@
           + 添加下载链接
         </el-button>
 
-        <!-- 历史版本 -->
         <el-divider content-position="left">
           <el-icon><Clock /></el-icon>
           历史版本
@@ -197,23 +196,14 @@
           + 添加历史版本
         </el-button>
 
-        <!-- 验证码 -->
         <el-divider />
-        <el-form-item label="验证码" prop="captchaAnswer" class="captcha-item">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <span class="captcha-question">{{ captchaNum1 }} + {{ captchaNum2 }} = ?</span>
-            <el-input v-model="form.captchaAnswer" placeholder="请输入答案" style="width: 120px;" />
-            <el-button link type="primary" @click="refreshCaptcha">换一题</el-button>
-          </div>
-        </el-form-item>
 
-        <!-- 提交 -->
         <div style="display: flex; gap: 12px; justify-content: center; padding-top: 16px;">
           <el-button type="primary" size="large" @click="submitForm" :loading="submitting">
-            提交到数据库
+            保存修改
           </el-button>
-          <el-button size="large" @click="resetForm">
-            重置表单
+          <el-button size="large" @click="$router.push('/admin')">
+            返回列表
           </el-button>
         </div>
       </el-form>
@@ -222,29 +212,20 @@
 </template>
 
 <script setup>
-import { ref, reactive, nextTick } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, reactive, onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
-import { Plus, ArrowRight, Download, Delete, Clock } from '@element-plus/icons-vue'
+import { ArrowRight, EditPen, Download, Delete, Clock } from '@element-plus/icons-vue'
 import { api } from '@/utils/api'
 
+const route = useRoute()
 const router = useRouter()
 const formRef = ref(null)
-const tagInputRef = ref(null)
 const submitting = ref(false)
+const loaded = ref(false)
 const showTagInput = ref(false)
 const newTag = ref('')
 const imageError = ref(false)
-
-// 验证码
-const captchaNum1 = ref(0)
-const captchaNum2 = ref(0)
-
-function refreshCaptcha() {
-  captchaNum1.value = Math.floor(Math.random() * 20) + 1
-  captchaNum2.value = Math.floor(Math.random() * 20) + 1
-}
-refreshCaptcha()
 
 const categories = [
   { value: 'dev', label: '开发工具' },
@@ -273,16 +254,14 @@ const form = reactive({
   rating: 4.0,
   featured: false,
   homepage: '',
-  downloadLinks: [{ name: '', url: '', type: 'direct', password: '', description: '' }],
-  versionHistory: [],
-  captchaAnswer: ''
+  downloadLinks: [],
+  versionHistory: []
 })
 
 const rules = {
   name: [{ required: true, message: '请输入软件名称', trigger: 'blur' }],
   category: [{ required: true, message: '请选择分类', trigger: 'change' }],
-  description: [{ required: true, message: '请输入简介', trigger: 'blur' }],
-  captchaAnswer: [{ required: true, message: '请输入验证码', trigger: 'blur' }]
+  description: [{ required: true, message: '请输入简介', trigger: 'blur' }]
 }
 
 function onCategoryChange(val) {
@@ -322,17 +301,9 @@ async function submitForm() {
   const valid = await formRef.value.validate().catch(() => false)
   if (!valid) return
 
-  // 验证码校验
-  const answer = parseInt(form.captchaAnswer)
-  if (answer !== captchaNum1.value + captchaNum2.value) {
-    ElMessage.error('验证码错误，请重新输入')
-    refreshCaptcha()
-    form.captchaAnswer = ''
-    return
-  }
-
   submitting.value = true
   try {
+    const id = parseInt(route.params.id)
     const data = {
       name: form.name,
       icon: form.icon,
@@ -346,7 +317,6 @@ async function submitForm() {
       size: form.size,
       license: form.license,
       imageUrl: form.imageUrl,
-      downloads: 0,
       rating: form.rating,
       featured: form.featured,
       homepage: form.homepage,
@@ -354,27 +324,47 @@ async function submitForm() {
       versionHistory: form.versionHistory.filter(v => v.version.trim())
     }
 
-    const result = await api.addSoftware(data)
-    ElMessage.success(`软件「${data.name}」添加成功！ID: ${result.id}`)
-    router.push(`/software/${result.id}`)
+    await api.updateSoftware(id, data)
+    ElMessage.success(`软件「${data.name}」修改成功！`)
+    router.push('/admin')
   } catch (err) {
-    ElMessage.error('添加失败: ' + err.message)
+    ElMessage.error('修改失败: ' + err.message)
   } finally {
     submitting.value = false
   }
 }
 
-function resetForm() {
-  formRef.value?.resetFields()
-  form.tags = []
-  form.downloadLinks = [{ name: '', url: '', type: 'direct', password: '', description: '' }]
-  form.versionHistory = []
-  form.icon = '📦'
-  form.rating = 4.0
-  form.imageUrl = ''
-  imageError.value = false
-  refreshCaptcha()
-}
+onMounted(async () => {
+  try {
+    const id = parseInt(route.params.id)
+    const data = await api.getSoftwareDetail(id)
+
+    Object.assign(form, {
+      name: data.name || '',
+      icon: data.icon || '📦',
+      category: data.category || '',
+      categoryName: data.categoryName || '',
+      tags: data.tags || [],
+      version: data.version || '',
+      description: data.description || '',
+      fullDescription: data.fullDescription || '',
+      platform: data.platform || '',
+      size: data.size || '',
+      license: data.license || '',
+      imageUrl: data.imageUrl || '',
+      rating: data.rating || 4.0,
+      featured: data.featured || false,
+      homepage: data.homepage || '',
+      downloadLinks: data.downloadLinks?.length ? data.downloadLinks : [{ name: '', url: '', type: 'direct', password: '', description: '' }],
+      versionHistory: data.versionHistory || []
+    })
+
+    loaded.value = true
+  } catch (err) {
+    ElMessage.error('加载失败: ' + err.message)
+    router.push('/admin')
+  }
+})
 </script>
 
 <style scoped>
@@ -425,17 +415,5 @@ function resetForm() {
   color: #f56c6c;
   padding: 12px;
   font-size: 14px;
-}
-
-.captcha-item {
-  margin-bottom: 0;
-}
-
-.captcha-question {
-  font-size: 18px;
-  font-weight: 700;
-  color: #409eff;
-  letter-spacing: 2px;
-  user-select: none;
 }
 </style>

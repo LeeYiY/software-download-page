@@ -65,6 +65,29 @@ router.post('/', async (req, res) => {
   }
 })
 
+// PUT /api/software/:id - 更新软件
+router.put('/:id', async (req, res) => {
+  try {
+    const id = parseInt(req.params.id)
+    const data = req.body
+    delete data._id
+    delete data.createdAt
+    delete data.updatedAt
+
+    const result = await Software.findOneAndUpdate(
+      { id },
+      { $set: data },
+      { new: true, runValidators: true }
+    )
+    if (!result) {
+      return res.status(404).json({ success: false, error: '未找到该软件' })
+    }
+    res.json({ success: true, data: result })
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message })
+  }
+})
+
 // DELETE /api/software/:id - 删除软件
 router.delete('/:id', async (req, res) => {
   try {

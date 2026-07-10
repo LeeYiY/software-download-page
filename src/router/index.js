@@ -1,7 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import SoftwareDetail from '@/views/SoftwareDetail.vue'
+import Admin from '@/views/Admin.vue'
 import AddSoftware from '@/views/AddSoftware.vue'
+import EditSoftware from '@/views/EditSoftware.vue'
 
 const routes = [
   {
@@ -21,9 +23,20 @@ const routes = [
     props: true
   },
   {
+    path: '/admin',
+    name: 'Admin',
+    component: Admin
+  },
+  {
     path: '/admin/add',
     name: 'AddSoftware',
     component: AddSoftware
+  },
+  {
+    path: '/admin/edit/:id',
+    name: 'EditSoftware',
+    component: EditSoftware,
+    props: true
   }
 ]
 

@@ -39,6 +39,14 @@ export const api = {
     })
   },
 
+  // 更新软件
+  updateSoftware(id, data) {
+    return requestJSON(`${API_BASE}/software/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(data)
+    })
+  },
+
   // 删除软件
   deleteSoftware(id) {
     return requestJSON(`${API_BASE}/software/${id}`, {

@@ -7,9 +7,9 @@
           📦 软件下载站
           <small>安全 · 快速 · 精选</small>
         </router-link>
-        <router-link to="/admin/add" class="admin-btn">
-          <el-icon><Plus /></el-icon>
-          添加软件
+        <router-link to="/admin" class="admin-btn">
+          <el-icon><Tools /></el-icon>
+          管理后台
         </router-link>
       </div>
     </header>
