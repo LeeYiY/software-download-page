@@ -11,10 +11,16 @@
           <el-icon><Tools /></el-icon>
           软件管理
         </h2>
-        <el-button type="primary" @click="$router.push('/admin/add')">
-          <el-icon><Plus /></el-icon>
-          添加软件
-        </el-button>
+        <div style="display: flex; gap: 8px;">
+          <el-button type="primary" @click="$router.push('/admin/add')">
+            <el-icon><Plus /></el-icon>
+            添加软件
+          </el-button>
+          <el-button @click="handleLogout">
+            <el-icon><SwitchButton /></el-icon>
+            退出登录
+          </el-button>
+        </div>
       </div>
 
       <el-input
@@ -79,10 +85,12 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { ArrowRight, Plus, Search, Tools, Document } from '@element-plus/icons-vue'
+import { ArrowRight, Plus, Search, Tools, Document, SwitchButton } from '@element-plus/icons-vue'
 import { api } from '@/utils/api'
 
+const router = useRouter()
 const loading = ref(false)
 const list = ref([])
 const searchKeyword = ref('')
@@ -111,6 +119,12 @@ async function loadData() {
   } finally {
     loading.value = false
   }
+}
+
+function handleLogout() {
+  api.clearAdminPassword()
+  ElMessage.success('已退出登录')
+  router.push('/')
 }
 
 async function handleDelete(row) {
