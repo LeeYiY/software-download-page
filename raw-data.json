@@ -1,0 +1,1063 @@
+[
+  {
+    "id": 1,
+    "name": "Visual Studio",
+    "icon": "💻",
+    "category": "dev",
+    "categoryName": "开发工具",
+    "tags": [
+      "编辑器",
+      "跨平台",
+      "开源",
+      "免费"
+    ],
+    "version": "release",
+    "description": "轻量级代码编辑器，支持上百种编程语言",
+    "fullDescription": "Visual Studio Code 是微软推出的跨平台代码编辑器，基于 Electron 框架构建。它拥有丰富的扩展生态系统，支持 Git 集成、调试器、智能代码补全、代码片段、代码重构等核心功能。内置终端让开发者无需离开编辑器即可完成命令行操作。",
+    "platform": "Windows / macOS / Linux",
+    "size": "150 MB",
+    "license": "免费开源",
+    "imageUrl": "https://code.visualstudio.com/assets/docs/configure/themes/themes_hero.gif",
+    "downloads": 2580000,
+    "rating": 4.8,
+    "featured": true,
+    "homepage": "https://code.visualstudio.com",
+    "downloadLinks": [
+      {
+        "name": "官方下载",
+        "url": "https://code.visualstudio.com/download",
+        "type": "direct",
+        "password": "",
+        "description": "官网直链，自动识别系统"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Git",
+    "icon": "🔀",
+    "category": "dev",
+    "categoryName": "开发工具",
+    "tags": [
+      "版本控制",
+      "跨平台",
+      "开源",
+      "免费"
+    ],
+    "version": "2.45.2",
+    "versionHistory": [
+      {
+        "version": "2.45.2",
+        "date": "2024-06-15",
+        "changes": "修复安全漏洞，改进性能",
+        "downloadLinks": [
+          {
+            "name": "Git官网下载",
+            "url": "https://git-scm.com/downloads",
+            "type": "direct",
+            "password": "",
+            "description": "2.45.2 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx2",
+            "type": "cloud",
+            "password": "git66",
+            "description": "2.45.2 版本"
+          }
+        ]
+      },
+      {
+        "version": "2.45.1",
+        "date": "2024-05-20",
+        "changes": "新增协议支持，改进合并策略",
+        "downloadLinks": [
+          {
+            "name": "Git官网下载",
+            "url": "https://git-scm.com/downloads",
+            "type": "direct",
+            "password": "",
+            "description": "2.45.1 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx2",
+            "type": "cloud",
+            "password": "git66",
+            "description": "2.45.1 版本"
+          }
+        ]
+      }
+    ],
+    "description": "分布式版本控制系统，现代软件开发基石",
+    "fullDescription": "Git 是目前世界上最先进的分布式版本控制系统，由 Linus Torvalds 为管理 Linux 内核开发而创建。它支持非线性开发分支、分布式协作、高效处理从小型到大型项目的版本管理。Git 是 GitHub、GitLab、Bitbucket 等平台的基础。",
+    "platform": "Windows / macOS / Linux",
+    "size": "65 MB",
+    "license": "免费开源",
+    "imageUrl": "",
+    "downloads": 1850000,
+    "rating": 4.9,
+    "featured": true,
+    "homepage": "https://git-scm.com",
+    "downloadLinks": [
+      {
+        "name": "Git官网下载",
+        "url": "https://git-scm.com/downloads",
+        "type": "direct",
+        "password": "",
+        "description": "官方最新版"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx2",
+        "type": "cloud",
+        "password": "git66",
+        "description": "Windows x64版本"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Google Chrome",
+    "icon": "🌐",
+    "category": "web",
+    "categoryName": "网络工具",
+    "tags": [
+      "浏览器",
+      "跨平台",
+      "免费",
+      "快速"
+    ],
+    "version": "126.0.6478.127",
+    "versionHistory": [
+      {
+        "version": "126.0.6478.127",
+        "date": "2024-07-03",
+        "changes": "安全更新，修复多个漏洞",
+        "downloadLinks": [
+          {
+            "name": "Chrome 官网",
+            "url": "https://www.google.com/chrome",
+            "type": "direct",
+            "password": "",
+            "description": "126.0.6478.127 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx3",
+            "type": "cloud",
+            "password": "cr66",
+            "description": "126.0.6478.127 版本"
+          }
+        ]
+      },
+      {
+        "version": "126.0.6478.62",
+        "date": "2024-06-18",
+        "changes": "性能优化，新增AI功能",
+        "downloadLinks": [
+          {
+            "name": "Chrome 官网",
+            "url": "https://www.google.com/chrome",
+            "type": "direct",
+            "password": "",
+            "description": "126.0.6478.62 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx3",
+            "type": "cloud",
+            "password": "cr66",
+            "description": "126.0.6478.62 版本"
+          }
+        ]
+      }
+    ],
+    "description": "快速、安全的现代浏览器",
+    "fullDescription": "Google Chrome 是 Google 开发的跨平台浏览器，以简洁、快速、安全著称。采用 Blink 渲染引擎和 V8 JavaScript 引擎，拥有庞大的扩展应用商店。支持多设备同步、密码管理器、内置翻译、安全沙箱等特性。",
+    "platform": "Windows / macOS / Linux / Android / iOS",
+    "size": "200 MB",
+    "license": "免费",
+    "imageUrl": "",
+    "downloads": 5200000,
+    "rating": 4.6,
+    "featured": true,
+    "homepage": "https://www.google.com/chrome",
+    "downloadLinks": [
+      {
+        "name": "Chrome 官网",
+        "url": "https://www.google.com/chrome",
+        "type": "direct",
+        "password": "",
+        "description": "官方下载页"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx3",
+        "type": "cloud",
+        "password": "cr66",
+        "description": "Windows离线安装包"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "7-Zip",
+    "icon": "📦",
+    "category": "sys",
+    "categoryName": "系统工具",
+    "tags": [
+      "压缩",
+      "免费",
+      "开源",
+      "轻量"
+    ],
+    "version": "24.07",
+    "versionHistory": [
+      {
+        "version": "24.07",
+        "date": "2024-06-20",
+        "changes": "新增Zstandard压缩格式支持",
+        "downloadLinks": [
+          {
+            "name": "7-Zip 官网",
+            "url": "https://www.7-zip.org/download.html",
+            "type": "direct",
+            "password": "",
+            "description": "24.07 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx4",
+            "type": "cloud",
+            "password": "7z66",
+            "description": "24.07 版本"
+          }
+        ]
+      },
+      {
+        "version": "24.06",
+        "date": "2024-05-15",
+        "changes": "性能优化，修复已知问题",
+        "downloadLinks": [
+          {
+            "name": "7-Zip 官网",
+            "url": "https://www.7-zip.org/download.html",
+            "type": "direct",
+            "password": "",
+            "description": "24.06 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx4",
+            "type": "cloud",
+            "password": "7z66",
+            "description": "24.06 版本"
+          }
+        ]
+      }
+    ],
+    "description": "高压缩率文件归档工具，支持多种格式",
+    "fullDescription": "7-Zip 是一款免费开源的文件压缩/解压缩工具，拥有极高的压缩比。支持 7z、XZ、BZIP2、GZIP、TAR、ZIP 和 WIM 等多种格式，解压支持 RAR、CAB、ISO、ARJ、LZH 等众多格式。集成到 Windows 右键菜单，使用便捷。",
+    "platform": "Windows",
+    "size": "1.5 MB",
+    "license": "免费开源 (LGPL)",
+    "imageUrl": "",
+    "downloads": 980000,
+    "rating": 4.9,
+    "featured": false,
+    "homepage": "https://www.7-zip.org",
+    "downloadLinks": [
+      {
+        "name": "7-Zip 官网",
+        "url": "https://www.7-zip.org/download.html",
+        "type": "direct",
+        "password": "",
+        "description": "官方下载页"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx4",
+        "type": "cloud",
+        "password": "7z66",
+        "description": "x64版本"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Everything",
+    "icon": "🔍",
+    "category": "sys",
+    "categoryName": "系统工具",
+    "tags": [
+      "搜索",
+      "免费",
+      "轻量",
+      "高效"
+    ],
+    "version": "1.4.1.1026",
+    "versionHistory": [
+      {
+        "version": "1.4.1.1026",
+        "date": "2024-05-01",
+        "changes": "性能优化，修复索引问题",
+        "downloadLinks": [
+          {
+            "name": "Everything 官网",
+            "url": "https://www.voidtools.com/downloads/",
+            "type": "direct",
+            "password": "",
+            "description": "1.4.1.1026 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx5",
+            "type": "cloud",
+            "password": "ev66",
+            "description": "1.4.1.1026 版本"
+          }
+        ]
+      },
+      {
+        "version": "1.4.1.1024",
+        "date": "2024-03-10",
+        "changes": "新增内容搜索支持",
+        "downloadLinks": [
+          {
+            "name": "Everything 官网",
+            "url": "https://www.voidtools.com/downloads/",
+            "type": "direct",
+            "password": "",
+            "description": "1.4.1.1024 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx5",
+            "type": "cloud",
+            "password": "ev66",
+            "description": "1.4.1.1024 版本"
+          }
+        ]
+      }
+    ],
+    "description": "Windows文件秒级搜索工具",
+    "fullDescription": "Everything 是 Windows 平台上最快的文件搜索工具。通过索引 NTFS 文件系统，实现毫秒级文件搜索。支持正则表达式搜索、文件过滤、HTTP/FTP 服务器、命令行操作等高级功能。体积小巧，资源占用低。",
+    "platform": "Windows",
+    "size": "5 MB",
+    "license": "免费",
+    "imageUrl": "",
+    "downloads": 750000,
+    "rating": 4.9,
+    "featured": false,
+    "homepage": "https://www.voidtools.com",
+    "downloadLinks": [
+      {
+        "name": "Everything 官网",
+        "url": "https://www.voidtools.com/downloads/",
+        "type": "direct",
+        "password": "",
+        "description": "官方下载"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx5",
+        "type": "cloud",
+        "password": "ev66",
+        "description": "安装版+便携版"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Notepad++",
+    "icon": "📝",
+    "category": "dev",
+    "categoryName": "开发工具",
+    "tags": [
+      "编辑器",
+      "Windows",
+      "免费",
+      "轻量"
+    ],
+    "version": "8.6.9",
+    "versionHistory": [
+      {
+        "version": "8.6.9",
+        "date": "2024-06-25",
+        "changes": "修复高亮问题，优化性能",
+        "downloadLinks": [
+          {
+            "name": "Notepad++ 官网",
+            "url": "https://notepad-plus-plus.org/downloads/",
+            "type": "direct",
+            "password": "",
+            "description": "8.6.9 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx6",
+            "type": "cloud",
+            "password": "npp66",
+            "description": "8.6.9 版本"
+          }
+        ]
+      },
+      {
+        "version": "8.6.8",
+        "date": "2024-05-20",
+        "changes": "新增自动备份功能增强",
+        "downloadLinks": [
+          {
+            "name": "Notepad++ 官网",
+            "url": "https://notepad-plus-plus.org/downloads/",
+            "type": "direct",
+            "password": "",
+            "description": "8.6.8 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx6",
+            "type": "cloud",
+            "password": "npp66",
+            "description": "8.6.8 版本"
+          }
+        ]
+      }
+    ],
+    "description": "强大的代码编辑器，支持语法高亮和插件",
+    "fullDescription": "Notepad++ 是一款免费的 Windows 代码编辑器，基于 Scintilla 编辑组件构建。支持近百种编程语言的语法高亮、代码折叠、宏录制、插件扩展等特性。轻量级启动速度快，是日常代码编辑和文本处理的利器。",
+    "platform": "Windows",
+    "size": "15 MB",
+    "license": "免费",
+    "imageUrl": "",
+    "downloads": 520000,
+    "rating": 4.5,
+    "featured": false,
+    "homepage": "https://notepad-plus-plus.org",
+    "downloadLinks": [
+      {
+        "name": "Notepad++ 官网",
+        "url": "https://notepad-plus-plus.org/downloads/",
+        "type": "direct",
+        "password": "",
+        "description": "官方下载"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx6",
+        "type": "cloud",
+        "password": "npp66",
+        "description": "x64安装包"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "WPS Office",
+    "icon": "📄",
+    "category": "office",
+    "categoryName": "办公效率",
+    "tags": [
+      "办公",
+      "免费",
+      "跨平台",
+      "PDF"
+    ],
+    "version": "12.2.0.17888",
+    "versionHistory": [
+      {
+        "version": "12.2.0.17888",
+        "date": "2024-07-05",
+        "changes": "新增AI写作助手，优化PDF编辑",
+        "downloadLinks": [
+          {
+            "name": "WPS 官网",
+            "url": "https://www.wps.com/download",
+            "type": "direct",
+            "password": "",
+            "description": "12.2.0.17888 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx7",
+            "type": "cloud",
+            "password": "wps66",
+            "description": "12.2.0.17888 版本"
+          },
+          {
+            "name": "阿里云盘",
+            "url": "https://www.aliyundrive.com/s/xxxxx7",
+            "type": "cloud",
+            "password": "",
+            "description": "12.2.0.17888 版本"
+          }
+        ]
+      },
+      {
+        "version": "12.1.0.17600",
+        "date": "2024-06-01",
+        "changes": "改进兼容性，修复已知问题",
+        "downloadLinks": [
+          {
+            "name": "WPS 官网",
+            "url": "https://www.wps.com/download",
+            "type": "direct",
+            "password": "",
+            "description": "12.1.0.17600 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx7",
+            "type": "cloud",
+            "password": "wps66",
+            "description": "12.1.0.17600 版本"
+          },
+          {
+            "name": "阿里云盘",
+            "url": "https://www.aliyundrive.com/s/xxxxx7",
+            "type": "cloud",
+            "password": "",
+            "description": "12.1.0.17600 版本"
+          }
+        ]
+      }
+    ],
+    "description": "国产办公软件套件，兼容Microsoft Office格式",
+    "fullDescription": "WPS Office 是金山软件推出的办公软件套件，包含文字、表格、演示三大组件。深度兼容 Microsoft Office 格式，支持 PDF 编辑、文档协作、云存储等功能。个人版免费使用，拥有丰富的模板库和 AI 辅助功能。",
+    "platform": "Windows / macOS / Linux / Android / iOS",
+    "size": "250 MB",
+    "license": "免费 (个人版)",
+    "imageUrl": "",
+    "downloads": 3200000,
+    "rating": 4.3,
+    "featured": true,
+    "homepage": "https://www.wps.com",
+    "downloadLinks": [
+      {
+        "name": "WPS 官网",
+        "url": "https://www.wps.com/download",
+        "type": "direct",
+        "password": "",
+        "description": "官方最新版"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx7",
+        "type": "cloud",
+        "password": "wps66",
+        "description": "个人免费版安装包"
+      },
+      {
+        "name": "阿里云盘",
+        "url": "https://www.aliyundrive.com/s/xxxxx7",
+        "type": "cloud",
+        "password": "",
+        "description": "不限速下载"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "VLC Media Player",
+    "icon": "🎬",
+    "category": "media",
+    "categoryName": "媒体工具",
+    "tags": [
+      "播放器",
+      "跨平台",
+      "开源",
+      "免费"
+    ],
+    "version": "3.0.21",
+    "versionHistory": [
+      {
+        "version": "3.0.21",
+        "date": "2024-06-05",
+        "changes": "修复安全漏洞，改进解码器",
+        "downloadLinks": [
+          {
+            "name": "VLC 官网",
+            "url": "https://www.videolan.org/vlc/download-windows.html",
+            "type": "direct",
+            "password": "",
+            "description": "3.0.21 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx8",
+            "type": "cloud",
+            "password": "vlc66",
+            "description": "3.0.21 版本"
+          }
+        ]
+      },
+      {
+        "version": "3.0.20",
+        "date": "2024-03-15",
+        "changes": "新增AV1硬件解码支持",
+        "downloadLinks": [
+          {
+            "name": "VLC 官网",
+            "url": "https://www.videolan.org/vlc/download-windows.html",
+            "type": "direct",
+            "password": "",
+            "description": "3.0.20 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx8",
+            "type": "cloud",
+            "password": "vlc66",
+            "description": "3.0.20 版本"
+          }
+        ]
+      }
+    ],
+    "description": "万能媒体播放器，支持几乎所有音视频格式",
+    "fullDescription": "VLC 是 VideoLAN 项目开发的一款免费开源跨平台多媒体播放器。支持几乎所有音视频格式（MP4、AVI、MKV、MP3、FLAC 等），无需额外安装解码器。支持流媒体播放、网络串流、视频转换、字幕同步等高级功能。",
+    "platform": "Windows / macOS / Linux / Android / iOS",
+    "size": "45 MB",
+    "license": "免费开源 (GPL)",
+    "imageUrl": "",
+    "downloads": 4100000,
+    "rating": 4.8,
+    "featured": true,
+    "homepage": "https://www.videolan.org/vlc",
+    "downloadLinks": [
+      {
+        "name": "VLC 官网",
+        "url": "https://www.videolan.org/vlc/download-windows.html",
+        "type": "direct",
+        "password": "",
+        "description": "官方下载"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx8",
+        "type": "cloud",
+        "password": "vlc66",
+        "description": "Windows x64版"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "ShareX",
+    "icon": "📸",
+    "category": "media",
+    "categoryName": "媒体工具",
+    "tags": [
+      "截图",
+      "录屏",
+      "免费",
+      "开源"
+    ],
+    "version": "16.1.0",
+    "versionHistory": [
+      {
+        "version": "16.1.0",
+        "date": "2024-06-10",
+        "changes": "新增OCR识别优化，改进截图编辑器",
+        "downloadLinks": [
+          {
+            "name": "ShareX 官网",
+            "url": "https://getsharex.com/download",
+            "type": "direct",
+            "password": "",
+            "description": "16.1.0 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx9",
+            "type": "cloud",
+            "password": "sx66",
+            "description": "16.1.0 版本"
+          }
+        ]
+      },
+      {
+        "version": "16.0.1",
+        "date": "2024-04-20",
+        "changes": "修复截图延迟问题",
+        "downloadLinks": [
+          {
+            "name": "ShareX 官网",
+            "url": "https://getsharex.com/download",
+            "type": "direct",
+            "password": "",
+            "description": "16.0.1 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx9",
+            "type": "cloud",
+            "password": "sx66",
+            "description": "16.0.1 版本"
+          }
+        ]
+      }
+    ],
+    "description": "免费开源截图与录屏工具",
+    "fullDescription": "ShareX 是一款免费开源的截图和录屏工具，功能强大。支持矩形截图、窗口截图、全屏截图、滚动截图等多种模式。内置图片编辑器、OCR文字识别、颜色拾取、二维码生成、上传到多种图床等功能。",
+    "platform": "Windows",
+    "size": "25 MB",
+    "license": "免费开源 (GPL)",
+    "imageUrl": "",
+    "downloads": 380000,
+    "rating": 4.7,
+    "featured": false,
+    "homepage": "https://getsharex.com",
+    "downloadLinks": [
+      {
+        "name": "ShareX 官网",
+        "url": "https://getsharex.com/download",
+        "type": "direct",
+        "password": "",
+        "description": "官方最新版"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx9",
+        "type": "cloud",
+        "password": "sx66",
+        "description": "便携版"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "uTools",
+    "icon": "🧰",
+    "category": "sys",
+    "categoryName": "系统工具",
+    "tags": [
+      "效率",
+      "搜索",
+      "插件",
+      "免费"
+    ],
+    "version": "5.2.0",
+    "versionHistory": [
+      {
+        "version": "5.2.0",
+        "date": "2024-06-20",
+        "changes": "新增AI助手，优化插件市场",
+        "downloadLinks": [
+          {
+            "name": "uTools 官网",
+            "url": "https://www.u.tools/download",
+            "type": "direct",
+            "password": "",
+            "description": "5.2.0 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx10",
+            "type": "cloud",
+            "password": "ut66",
+            "description": "5.2.0 版本"
+          }
+        ]
+      },
+      {
+        "version": "5.1.0",
+        "date": "2024-04-10",
+        "changes": "全新UI设计，性能提升",
+        "downloadLinks": [
+          {
+            "name": "uTools 官网",
+            "url": "https://www.u.tools/download",
+            "type": "direct",
+            "password": "",
+            "description": "5.1.0 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx10",
+            "type": "cloud",
+            "password": "ut66",
+            "description": "5.1.0 版本"
+          }
+        ]
+      }
+    ],
+    "description": "新一代效率工具平台，让工作更高效",
+    "fullDescription": "uTools 是一款桌面效率工具，通过丰富的插件系统实现快速启动、文件搜索、剪贴板管理、翻译、计算等多种功能。支持 Alt+Space 全局呼出，插件市场拥有数百款实用插件，大幅提升工作效率。",
+    "platform": "Windows / macOS / Linux",
+    "size": "80 MB",
+    "license": "免费",
+    "imageUrl": "",
+    "downloads": 620000,
+    "rating": 4.6,
+    "featured": false,
+    "homepage": "https://www.u.tools",
+    "downloadLinks": [
+      {
+        "name": "uTools 官网",
+        "url": "https://www.u.tools/download",
+        "type": "direct",
+        "password": "",
+        "description": "官方最新版"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx10",
+        "type": "cloud",
+        "password": "ut66",
+        "description": "Windows安装包"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Obsidian",
+    "icon": "🧠",
+    "category": "office",
+    "categoryName": "办公效率",
+    "tags": [
+      "笔记",
+      "知识管理",
+      "跨平台",
+      "免费"
+    ],
+    "version": "1.6.7",
+    "versionHistory": [
+      {
+        "version": "1.6.7",
+        "date": "2024-07-01",
+        "changes": "新增属性面板，优化标签管理",
+        "downloadLinks": [
+          {
+            "name": "Obsidian 官网",
+            "url": "https://obsidian.md/download",
+            "type": "direct",
+            "password": "",
+            "description": "1.6.7 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx11",
+            "type": "cloud",
+            "password": "ob66",
+            "description": "1.6.7 版本"
+          }
+        ]
+      },
+      {
+        "version": "1.5.12",
+        "date": "2024-05-15",
+        "changes": "改进Canvas功能，修复同步问题",
+        "downloadLinks": [
+          {
+            "name": "Obsidian 官网",
+            "url": "https://obsidian.md/download",
+            "type": "direct",
+            "password": "",
+            "description": "1.5.12 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx11",
+            "type": "cloud",
+            "password": "ob66",
+            "description": "1.5.12 版本"
+          }
+        ]
+      }
+    ],
+    "description": "强大的知识管理和笔记应用",
+    "fullDescription": "Obsidian 是一款基于本地 Markdown 文件的知识管理工具。支持双向链接、图谱视图、Canvas 白板、标签体系等核心功能。丰富的社区插件生态让 Obsidian 可以扩展为笔记工具、每日计划、看板管理、个人 Wiki 等。",
+    "platform": "Windows / macOS / Linux / Android / iOS",
+    "size": "120 MB",
+    "license": "免费 (个人使用)",
+    "imageUrl": "",
+    "downloads": 890000,
+    "rating": 4.8,
+    "featured": true,
+    "homepage": "https://obsidian.md",
+    "downloadLinks": [
+      {
+        "name": "Obsidian 官网",
+        "url": "https://obsidian.md/download",
+        "type": "direct",
+        "password": "",
+        "description": "官方下载"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx11",
+        "type": "cloud",
+        "password": "ob66",
+        "description": "Windows x64安装包"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Python",
+    "icon": "🐍",
+    "category": "dev",
+    "categoryName": "开发工具",
+    "tags": [
+      "编程语言",
+      "跨平台",
+      "开源",
+      "免费"
+    ],
+    "version": "3.12.4",
+    "versionHistory": [
+      {
+        "version": "3.12.4",
+        "date": "2024-06-10",
+        "changes": "安全更新，修复已知Bug",
+        "downloadLinks": [
+          {
+            "name": "Python 官网",
+            "url": "https://www.python.org/downloads/",
+            "type": "direct",
+            "password": "",
+            "description": "3.12.4 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx12",
+            "type": "cloud",
+            "password": "py66",
+            "description": "3.12.4 版本"
+          }
+        ]
+      },
+      {
+        "version": "3.12.3",
+        "date": "2024-04-09",
+        "changes": "改进性能，新增语法特性",
+        "downloadLinks": [
+          {
+            "name": "Python 官网",
+            "url": "https://www.python.org/downloads/",
+            "type": "direct",
+            "password": "",
+            "description": "3.12.3 版本"
+          },
+          {
+            "name": "百度网盘",
+            "url": "https://pan.baidu.com/s/xxxxx12",
+            "type": "cloud",
+            "password": "py66",
+            "description": "3.12.3 版本"
+          }
+        ]
+      }
+    ],
+    "description": "通用编程语言，AI和数据分析首选",
+    "fullDescription": "Python 是一种高级通用编程语言，以简洁的语法和强大的生态著称。广泛应用于 Web 开发、数据分析、人工智能、机器学习、自动化脚本、科学计算等领域。拥有丰富的第三方库支持，是入门编程的首选语言。",
+    "platform": "Windows / macOS / Linux",
+    "size": "100 MB",
+    "license": "免费开源 (PSF)",
+    "imageUrl": "",
+    "downloads": 3800000,
+    "rating": 4.7,
+    "featured": false,
+    "homepage": "https://www.python.org",
+    "downloadLinks": [
+      {
+        "name": "Python 官网",
+        "url": "https://www.python.org/downloads/",
+        "type": "direct",
+        "password": "",
+        "description": "官方下载"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/xxxxx12",
+        "type": "cloud",
+        "password": "py66",
+        "description": "Windows x64安装包"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "R-Studio-Technician",
+    "icon": "🐍",
+    "category": "disk",
+    "categoryName": "磁盘工具",
+    "tags": [
+      "文件恢复",
+      "磁盘",
+      "破解"
+    ],
+    "version": "V9.5.191810",
+    "description": "R-Studio是损坏硬盘上资料的救星。",
+    "fullDescription": "R-Studio Technician 是加拿大 R-Tools 公司推出的专业商用级数据恢复 + 数字取证一体化软件，面向数据恢复门店、IT 运维、取证实验室、维修技术员，是 R-Studio 产品线最高权限版本（家用版无法商用、缺少高级功能）。",
+    "platform": "Windows",
+    "size": "78.32 MB",
+    "license": "破解 (PSF)",
+    "imageUrl": "",
+    "downloads": 3800000,
+    "rating": 5.0,
+    "featured": false,
+    "homepage": "https://www.r-studio.com/",
+    "downloadLinks": [
+      {
+        "name": "B2网盘",
+        "url": "https://b2.onross.com/破解软件/R-Studio/R-Studio-Technician-v9.5.191810.7z",
+        "type": "direct",
+        "password": "",
+        "description": "中文绿色，免安装"
+      },
+      {
+        "name": "R2网盘",
+        "url": "https://r2.onross.com/破解软件/R-Studio/R-Studio-Technician-v9.5.191810.7z",
+        "type": "direct",
+        "password": "",
+        "description": "中文绿色，免安装"
+      },
+      {
+        "name": "蓝奏云",
+        "url": "https://onross.lanzoul.com/b0341hno0j",
+        "type": "cloud",
+        "password": "br3l",
+        "description": "蓝奏云"
+      },
+      {
+        "name": "爱纯净",
+        "url": "https://www.lanzouo.com/b685684",
+        "type": "cloud",
+        "password": "",
+        "description": "蓝奏云，来自爱纯净"
+      }
+    ],
+    "versionHistory": [
+      {
+        "version": "V9.5.191733",
+        "date": "2026-03-31",
+        "changes": "修复漏洞\r\n- 程序在禁用排序功能时搜索文件时可能已崩溃。已修复。\n扫描过程中可启动分区搜索。已修复。\n- 在“创建映像”对话框中启动运行时逐字节映射时，可能出现关于压缩的错误警告。已修复。",
+        "downloadLinks": [
+          {
+            "name": "蓝奏云",
+            "url": "https://onross.lanzoul.com/iaIBR3otqd2d/",
+            "type": "cloud",
+            "password": "oooo",
+            "description": "蓝奏云"
+          },
+          {
+            "name": "B2网盘",
+            "url": "https://b2.onross.com/破解软件/R-Studio/R-Studio-Technician-v9.5.191733-CN-Portable.7z",
+            "type": "direct",
+            "password": "",
+            "description": "中文绿色，免安装"
+          },
+          {
+            "name": "R2网盘",
+            "url": "https://r2.onross.com/破解软件/R-Studio/R-Studio-Technician-v9.5.191733-CN-Portable.7z",
+            "type": "direct",
+            "password": "",
+            "description": "中文绿色，免安装"
+          }
+        ]
+      }
+    ]
+  }
+]
