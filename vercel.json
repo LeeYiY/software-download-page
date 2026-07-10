@@ -33,7 +33,6 @@
     }
   ],
   "env": {
-    "MONGODB_URI": "",
     "NODE_ENV": "production"
   }
 }
